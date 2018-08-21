@@ -100,7 +100,7 @@ temperature<-ggplot() +
   
   guides(color = guide_legend(override.aes = list(linetype = c(0, 1)))) +
   
-  facet_wrap(~ Site, ncol=3)
+  facet_wrap(~ Site, ncol=3, labeller = label_both)
 
 ggsave("fig/temp_plot.png", dpi=300, width= 12, height =10)
 
