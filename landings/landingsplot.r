@@ -17,7 +17,7 @@ landings <- read.csv("data/landings.csv", header= T)
 stland<-ggplot(data=landings, aes(x=Year, y=State_landings))+
   geom_line(size=2)+
   labs(x= "Year", y= "State Landings") +
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -30,7 +30,7 @@ stland<-ggplot(data=landings, aes(x=Year, y=State_landings))+
 sttrip<-ggplot(data=landings, aes(x=Year, y=State_trips))+
   geom_line(size=2)+
   labs(x= "Year", y= "State Trips")+
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -44,7 +44,7 @@ stpertrip<-
   ggplot(data=landings, aes(x=Year, y=State_per_trip))+
   geom_line(size=2)+
   labs(x= "Year", y= "State Per Trip")+
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -58,7 +58,7 @@ apstland<-
   ggplot(data=landings, aes(x=Year, y=Apalach_landings)) +
   geom_line(size=2) +
   labs(x= "Year", y= "Apalachicola Landings") +
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -73,7 +73,7 @@ apsttrip<-
   ggplot(data=landings, aes(x=Year, y=Apalach_trips))+
   geom_line(size=2)+
   labs(x= "Year", y= "Apalachicola Trips")+
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018))+
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018))+
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -88,7 +88,7 @@ apstpertrip<-
   ggplot(data=landings, aes(x=Year, y=Apalach_per_trip))+
   geom_line(size=2)+
   labs(x= "Year", y= "Apalachicola Per Trip")+
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -104,7 +104,7 @@ swstland<-
   ggplot(data=landings, aes(x=Year, y=Suw_landings))+
   geom_line(size=2)+
   labs(x= "Year", y= "Suwannee Sound Landings")+
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -119,7 +119,7 @@ swsttrip<-
   ggplot(data=landings, aes(x=Year, y=Suw_trips))+
   geom_line(size=2)+
   labs(x= "Year", y= "Suwannee Sound Trips") +
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -134,7 +134,7 @@ swstpertrip<-
   ggplot(data=landings, aes(x=Year, y=Suw_per_trip))+
   geom_line(size=2)+
   labs(x= "Year", y= "Suwannee Sound Per Trip")+
-  scale_x_continuous(limits=c(1986,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
+  scale_x_continuous(limits=c(2012,2018), breaks=c(1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000,2002,  2004, 2006, 2008,  2010, 2012,2014,2016,2018)) +
   scale_y_continuous()+
   theme(panel.border = element_rect(color = "black", size = 0.5, fill = NA, linetype="solid"),
         axis.text=element_text(size=15),
@@ -158,7 +158,17 @@ ggdraw() +
 ggsave("pic/alllandslines86_12.tiff", units="in", width=25, height=25, dpi=300, compression = 'lzw')
 
 
-suw_plots86_18<-plot_grid(swstland,swsttrip,swstpertrip, ncol=1)
-ggsave("pic/suw_plots86_18.tiff", units="in", width=8, height=12, dpi=300, compression = 'lzw')
+sws_plots12_18<-plot_grid(swstland,swsttrip,swstpertrip, ncol=1)
+
+ggsave("pic/suw_plots12_18.tiff", units="in", width=8, height=12, dpi=300, compression = 'lzw')
+
+st_plots12_18<-plot_grid(stland,sttrip,stpertrip, ncol=1)
+
+ggsave("pic/st_plots12_18.tiff", units="in", width=8, height=12, dpi=300, compression = 'lzw')
+
+
+apa_plots12_18<-plot_grid(apstland,apsttrip,apstpertrip, ncol=1)
+
+ggsave("pic/apa_plots12_18.tiff", units="in", width=8, height=12, dpi=300, compression = 'lzw')
 
 
