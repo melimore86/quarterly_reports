@@ -26,9 +26,9 @@ if (max(dis$dates) < (Sys.Date() - 5)) {
 }
 
 # Define start and end date of the plot
-####ALWAYS CHANGE THIS DATE TO THE LAST UPLOAD TIME
+####ALWAYS CHANGE THIS DATE TO THE LAST UPLOAD TIME############################
 startDate <- ymd_hms("2017-08-16 00:00:00")
-endDate <- ymd_hms("2018-09-05 23:00:00")
+endDate <- ymd_hms("2018-10-17 23:00:00")
 
 
 # Create sequence of dates (so that NA is recognized by geom_line) and build a table of
@@ -80,7 +80,7 @@ saltemp<-ggplot() +
                                          name = "River Discharge (1,000 cfs)
                                          ",
                                          breaks = seq(0, 20, 10))) +
-  scale_x_date(date_breaks = "4 weeks", date_labels = "%y-%m-%d", expand = c(0, 0)) +
+  scale_x_date(date_breaks = "2 months", date_labels = "%y-%m-%d", expand = c(0, 0)) +
   
   scale_fill_manual(values = c("#56B4E9", "#0072B2", "#D55E00")) +
   
