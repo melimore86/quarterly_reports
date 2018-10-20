@@ -28,7 +28,7 @@ if (max(dis$dates) < (Sys.Date() - 5)) {
 # Define start and end date of the plot
 ####ALWAYS CHANGE THIS DATE TO THE LAST UPLOAD TIME############################
 startDate <- ymd_hms("2017-08-16 00:00:00")
-endDate <- ymd_hms("2018-10-17 23:00:00")
+endDate <- ymd_hms("2018-10-04 23:00:00")
 
 
 # Create sequence of dates (so that NA is recognized by geom_line) and build a table of
